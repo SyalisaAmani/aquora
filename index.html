@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover AQUORA reusable water bottles, designed for everyday adventures." />
+  <title>AQUORA — Hydration, Naturally</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN is convenient for this coding-test prototype. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#203D32",
+            moss: "#526B50",
+            cream: "#F8F6EF",
+            sand: "#E9E3D5",
+            orange: "#D98253"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Manrope", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-cream text-forest antialiased">
+  <header class="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-y-4 px-5 py-4 sm:px-8 lg:px-12" aria-label="Main navigation">
+      <a href="#home" class="display-font text-2xl font-extrabold tracking-[0.18em]">
+        AQUORA<span class="text-orange">.</span>
+      </a>
+
+      <div class="primary-navigation order-3 flex w-full items-center justify-between text-xs font-medium md:order-none md:w-auto md:gap-8 md:text-sm">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#advantages" class="nav-link">Advantages</a>
+        <a href="#awards" class="nav-link">Awards</a>
+        <a href="#available" class="nav-link">Available In</a>
+      </div>
+
+      <a href="#available" class="rounded-full bg-forest px-5 py-3 text-sm font-semibold text-white transition hover:bg-moss">
+        Shop now <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section id="home" class="overflow-hidden">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-24">
+        <div class="order-2 lg:order-1">
+          <h1 class="display-font mt-7 max-w-xl text-5xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+            Drink well.<br />
+            <span class="text-moss">Live fully.</span>
+          </h1>
+
+          <p class="mt-6 max-w-lg text-base leading-8 text-forest/70 sm:text-lg">
+            Thoughtfully designed water bottles for wherever life takes you.
+            Stay refreshed, embrace the outdoors, and make every sip count.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#awards" class="rounded-full bg-forest px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-moss">
+              Explore our awards <span aria-hidden="true">→</span>
+            </a>
+            <a href="#advantages" class="rounded-full border border-forest/20 px-7 py-4 text-sm font-bold transition hover:bg-white">
+              Discover more
+            </a>
+          </div>
+
+          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-forest/15 pt-6">
+            <div>
+              <p class="display-font text-2xl font-extrabold">01</p>
+              <p class="mt-1 text-xs text-forest/60">Thoughtful design</p>
+            </div>
+            <div>
+              <p class="display-font text-2xl font-extrabold">02</p>
+              <p class="mt-1 text-xs text-forest/60">Made for everyday</p>
+            </div>
+            <div>
+              <p class="display-font text-2xl font-extrabold">03</p>
+              <p class="mt-1 text-xs text-forest/60">Reusable by design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <div class="relative mx-auto max-w-lg">
+            <div class="absolute inset-5 rounded-[48%] bg-sand sm:inset-8" aria-hidden="true"></div>
+            <img
+              src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=85"
+              alt="Reusable water bottle photographed in a clean, minimal style"
+              class="hero-image relative z-10 aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"
+            />
+            <div class="absolute -bottom-5 -left-3 z-20 max-w-[220px] rounded-2xl bg-white p-4 shadow-lg sm:-left-6 sm:p-5">
+              <p class="text-xs font-semibold uppercase tracking-widest text-moss">Your daily companion</p>
+              <p class="display-font mt-2 text-lg font-extrabold">Made to move with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits section -->
+    <section id="advantages" class="bg-forest py-16 text-white sm:py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="max-w-2xl">
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-[#D7B99A]">The AQUORA difference</p>
+          <h2 class="display-font mt-4 text-3xl font-extrabold sm:text-4xl">More Than a Bottle. Your Everyday Essential.</h2>
+          <p class="mt-4 leading-7 text-white/65">
+             Keep your drinks at the right temperature, enjoy a durable and reusable design,
+  and stay hydrated wherever your day takes you.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="benefit-card">
+            <img
+              src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              alt="Reusable water bottle in a clean, minimal style"
+              loading="lazy"
+              class="mb-5 aspect-[4/3] w-full rounded-xl object-cover"
+            />
+            <span class="text-3xl" aria-hidden="true">✳</span>
+            <h3 class="mt-5 text-lg font-bold">Wide Selection of Colors</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Available in a variety of attractive colors, it can be customized to match your personality.</p>
+          </article>
+          <article class="benefit-card">
+            <img
+              src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              alt="Reusable bottle ready for everyday use"
+              loading="lazy"
+              class="mb-5 aspect-[4/3] w-full rounded-xl object-cover"
+            />
+            <span class="text-3xl" aria-hidden="true">◷</span>
+            <h3 class="mt-5 text-lg font-bold">1 Year Warranty</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">File a warranty claim when a product is damaged due to a manufacturing defect.</p>
+          </article>
+          <article class="benefit-card">
+            <img
+              src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              alt="Bottle product in a minimal setting"
+              loading="lazy"
+              class="mb-5 aspect-[4/3] w-full rounded-xl object-cover"
+            />
+            <span class="text-3xl" aria-hidden="true">↗</span>
+            <h3 class="mt-5 text-lg font-bold">Available in Various Sizes</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Available in a variety of sizes to suit your needs and daily activities</p>
+          </article>
+          <article class="benefit-card">
+            <img
+              src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              alt="Durable reusable AQUORA-style water bottle"
+              loading="lazy"
+              class="mb-5 aspect-[4/3] w-full rounded-xl object-cover"
+            />
+            <span class="text-3xl" aria-hidden="true">♡</span>
+            <h3 class="mt-5 text-lg font-bold">Strong and Durable</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Built to last with high-quality materials and craftsmanship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <p class="text-xs font-bold uppercase tracking-[0.22em] text-moss">Recognition &amp; awards</p>
+        <h2 class="display-font mt-3 text-3xl font-extrabold sm:text-4xl">Award-winning by design.</h2>
+        <p class="mt-3 max-w-2xl leading-7 text-forest/65">
+          AQUORA is honored to be recognized by leading brand award programs.
+        </p>
+
+        <ol class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="award-card bg-white/60">
+            <img
+              src="https://awards.brandingforum.org/wp-content/uploads/2025/03/WBA-BOTY-R-Logo.png"
+              alt="World Branding Awards Brand of the Year logo"
+              loading="lazy"
+              class="mx-auto mb-5 h-32 w-32 object-contain"
+            />
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-moss">World Branding Awards</p>
+            <h3 class="display-font mt-4 text-xl font-extrabold">Brand of the Year 2026</h3>
+          </li>
+          <li class="award-card bg-white/60">
+            <img
+              src="https://masterbrandaward.com/assets/images/general/logo.png?ver=2026.2.0.1"
+              alt="Master Brand Award logo"
+              loading="lazy"
+              class="mx-auto mb-5 h-32 w-32 object-contain"
+            />
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-moss">Indonesia Best Brand Award</p>
+            <h3 class="display-font mt-4 text-xl font-extrabold">Indonesia Best Brand Award 2026</h3>
+          </li>
+          <li class="award-card bg-white/60">
+            <img
+              src="https://img.magnific.com/free-vector/2025-top-voted-trusted-brand-golden-sticker_1017-63635.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
+              alt="2025 Top Voted Trusted Brand golden award badge"
+              loading="lazy"
+              class="mx-auto mb-5 h-32 w-32 object-contain"
+            />
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-moss">Trusted Brand Award</p>
+            <h3 class="display-font mt-4 text-xl font-extrabold">Most Trusted Water Bottle Brands of 2025</h3>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Availability -->
+    <section id="available" class="bg-sand px-5 py-16 sm:px-8 sm:py-20">
+      <div class="mx-auto max-w-7xl text-center">
+        <p class="text-xs font-bold uppercase tracking-[0.22em] text-moss">Shop AQUORA</p>
+        <h2 class="display-font mt-4 text-3xl font-extrabold sm:text-5xl">Available In</h2>
+        <p class="mx-auto mt-4 max-w-2xl leading-7 text-forest/70">
+          Find AQUORA on your preferred marketplace.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href="https://www.tokopedia.com/search?st=product&amp;q=AQUORA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-forest px-7 py-4 text-sm font-bold text-white transition hover:bg-moss"
+          >
+            Tokopedia <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="https://shopee.co.id/search?keyword=AQUORA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-forest px-7 py-4 text-sm font-bold text-white transition hover:bg-moss"
+          >
+            Shopee <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href="https://www.tiktok.com/shop/search?q=AQUORA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-forest px-7 py-4 text-sm font-bold text-white transition hover:bg-moss"
+          >
+            TikTok Shop <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company information -->
+    <section id="contact" class="bg-forest px-5 py-14 text-white sm:px-8 sm:py-16">
+      <div class="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+        <div>
+          <a href="#home" class="display-font text-2xl font-extrabold tracking-[0.18em]" aria-label="AQUORA home">
+            AQUORA<span class="text-orange">.</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-7 text-white/65">
+            Hydration, naturally. Designed for everyday living.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-[0.18em] text-[#D7B99A]">Contact us</h2>
+          <address class="mt-4 space-y-3 text-sm not-italic text-white/75">
+            <p><a href="mailto:aquora@gmail.com" class="hover:text-white">aquora@gmail.com</a></p>
+            <p><a href="tel:+6281982334097" class="hover:text-white">081982334097</a></p>
+            <p>Jalan Kartini, Surabaya</p>
+            <p>
+              <a href="https://www.instagram.com/aquora.indonesia/" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+                Instagram: @aquora.indonesia
+              </a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/search/top?q=aquora%20indonesia" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+                Facebook: AQUORA Indonesia
+              </a>
+            </p>
+          </address>
+        </div>
+
+        <nav aria-label="Quick links">
+          <h2 class="text-sm font-bold uppercase tracking-[0.18em] text-[#D7B99A]">Quick links</h2>
+          <ul class="mt-4 space-y-3 text-sm text-white/75">
+            <li><a href="#home" class="hover:text-white">Home</a></li>
+            <li><a href="#advantages" class="hover:text-white">Advantages</a></li>
+            <li><a href="#awards" class="hover:text-white">Awards</a></li>
+            <li><a href="#available" class="hover:text-white">Available In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-forest/15">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
+      <a href="#home" class="display-font text-xl font-extrabold tracking-[0.18em]">AQUORA<span class="text-orange">.</span></a>
+      <p class="text-sm text-forest/60">Hydration, naturally. Designed for everyday living.</p>
+      <p class="text-xs text-forest/50">© 2026 AQUORA. Concept website.</p>
+    </div>
+  </footer>
+</body>
+</html>

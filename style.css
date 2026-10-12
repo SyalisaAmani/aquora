@@ -1,0 +1,115 @@
+/* AQUORA — custom styles
+   Most layout and responsive styling uses Tailwind utility classes in index.html.
+   Keep this file for reusable custom styles and visual enhancements. */
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.display-font {
+  font-family: "Manrope", sans-serif;
+}
+
+::selection {
+  background: #203D32;
+  color: #ffffff;
+}
+
+.nav-link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #D98253;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+.hero-image {
+  transition: transform 500ms ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.035);
+}
+
+.benefit-card {
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.benefit-card:hover {
+  background-color: rgb(255 255 255 / 5%);
+  transform: translateY(-3px);
+}
+
+.award-card {
+  border: 1px solid rgb(32 61 50 / 15%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.award-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 1.5rem rgb(32 61 50 / 8%);
+}
+
+.product-image {
+  display: block;
+  object-fit: cover;
+}
+
+.product-link {
+  display: flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(32 61 50 / 20%);
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.product-link:hover,
+.product-link:focus-visible {
+  background-color: #203D32;
+  color: #ffffff;
+}
+
+a:focus-visible {
+  outline: 3px solid #D98253;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  section[id] {
+    scroll-margin-top: 8rem;
+  }
+}
